@@ -2,6 +2,7 @@ package com.mokshith.mvvmclean.domain.repository
 
 import com.mokshith.mvvmclean.data.remote.dto.CoinDetailsDto
 import com.mokshith.mvvmclean.data.remote.dto.CoinDto
+import com.mokshith.mvvmclean.data.remote.dto.HPModelDto
 
 interface CoinRepository {
 
@@ -11,6 +12,10 @@ interface CoinRepository {
     suspend fun getCoins(): List<CoinDto>
 
     suspend fun getCoinDetailsById(coinId: String): CoinDetailsDto
+
+    suspend fun getHPList(): List<HPModelDto>
+
+    suspend fun getHPDetails(id: String): List<HPModelDto>
 }
 
 
