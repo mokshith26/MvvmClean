@@ -1,6 +1,6 @@
 package com.mokshith.mvvmclean.domain.models
 
-import com.mokshith.gittest.mvvmClean.data.remote.dto.TeamMember
+import com.mokshith.mvvmclean.data.remote.dto.coins.TeamMember
 
 data class CoinDetails(
     val coinId: String,

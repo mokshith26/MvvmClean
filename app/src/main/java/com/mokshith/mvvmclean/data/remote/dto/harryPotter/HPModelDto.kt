@@ -1,4 +1,4 @@
-package com.mokshith.mvvmclean.data.remote.dto
+package com.mokshith.mvvmclean.data.remote.dto.harryPotter
 
 import com.mokshith.mvvmclean.domain.models.HPModel
 import com.mokshith.mvvmclean.domain.models.HPModelDetails

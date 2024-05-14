@@ -1,7 +1,7 @@
 package com.mokshith.mvvmclean.domain.useCase.hpListUseCase
 
 import com.mokshith.mvvmclean.common.ApiState
-import com.mokshith.mvvmclean.data.remote.dto.getHpList
+import com.mokshith.mvvmclean.data.remote.dto.harryPotter.getHpList
 import com.mokshith.mvvmclean.domain.models.HPModel
 import com.mokshith.mvvmclean.domain.repository.CoinRepository
 import kotlinx.coroutines.flow.Flow

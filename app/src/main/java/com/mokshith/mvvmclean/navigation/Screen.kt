@@ -10,5 +10,5 @@ sealed class Screen(val route: String) {
 
     data object HarryPotterDetailsScreen : Screen("hp_details_screen")
 
-
+    data object MenuListScreen : Screen("menu_list_screen")
 }

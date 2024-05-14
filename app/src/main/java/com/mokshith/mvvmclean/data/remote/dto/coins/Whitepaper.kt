@@ -1,4 +1,4 @@
-package com.mokshith.myapplicationtesting.mvvmClean.data.remote.dto
+package com.mokshith.mvvmclean.data.remote.dto.coins
 
 data class Whitepaper(
     val link: String,

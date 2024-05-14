@@ -1,11 +1,6 @@
-package com.mokshith.mvvmclean.data.remote.dto
+package com.mokshith.mvvmclean.data.remote.dto.coins
 
-import com.mokshith.gittest.mvvmClean.data.remote.dto.Links
-import com.mokshith.gittest.mvvmClean.data.remote.dto.Tag
-import com.mokshith.gittest.mvvmClean.data.remote.dto.TeamMember
 import com.mokshith.mvvmclean.domain.models.CoinDetails
-import com.mokshith.myapplicationtesting.mvvmClean.data.remote.dto.LinksExtended
-import com.mokshith.myapplicationtesting.mvvmClean.data.remote.dto.Whitepaper
 
 data class CoinDetailsDto(
     val description: String,

@@ -5,7 +5,7 @@ data class HPModelDetails(
     val image : String?,
     val gender : String?,
     val alive : Boolean?,
-    val house: String,
-    val actor: String,
-    val dateOfBirth: String,
+    val house: String?,
+    val actor: String?,
+    val dateOfBirth: String?,
 )

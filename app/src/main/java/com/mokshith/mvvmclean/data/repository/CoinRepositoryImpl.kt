@@ -1,10 +1,12 @@
 package com.mokshith.mvvmclean.data.repository
 
 import com.mokshith.mvvmclean.data.remote.WebServices
-import com.mokshith.mvvmclean.data.remote.dto.CoinDetailsDto
-import com.mokshith.mvvmclean.data.remote.dto.CoinDto
-import com.mokshith.mvvmclean.data.remote.dto.HPModelDto
+import com.mokshith.mvvmclean.data.remote.dto.coins.CoinDetailsDto
+import com.mokshith.mvvmclean.data.remote.dto.coins.CoinDto
+import com.mokshith.mvvmclean.data.remote.dto.harryPotter.HPModelDto
+import com.mokshith.mvvmclean.data.remote.dto.menu.MenuListDto
 import com.mokshith.mvvmclean.domain.repository.CoinRepository
+import retrofit2.Response
 import javax.inject.Inject
 
 class CoinRepositoryImpl @Inject constructor(
@@ -24,5 +26,9 @@ class CoinRepositoryImpl @Inject constructor(
 
     override suspend fun getHPDetails(id: String): List<HPModelDto> {
         return webServices.getHpDetails(id)
+    }
+
+    override suspend fun getMenuList(): Response<MenuListDto> {
+        return webServices.getMenuList()
     }
 }

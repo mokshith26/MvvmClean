@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
-import com.mokshith.gittest.mvvmClean.data.remote.dto.TeamMember
+import com.mokshith.mvvmclean.data.remote.dto.coins.TeamMember
 
 @Composable
 fun TeamListItem(

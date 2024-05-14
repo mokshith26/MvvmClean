@@ -10,12 +10,12 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.mokshith.mvvmclean.common.composobles.ErrorScreen
 import com.mokshith.mvvmclean.common.composobles.LoadingScreen
+import com.mokshith.mvvmclean.navigation.Screen
 import com.mokshith.mvvmclean.presentation.theme.harryPotterList.composables.HpListItem
 
 @Composable
 fun HarryPotterListScreen(
-    navController: NavController,
-    viewModel: HarryPotterListViewModel = hiltViewModel()
+    navController: NavController, viewModel: HarryPotterListViewModel = hiltViewModel()
 ) {
 
     val state = viewModel.state.value
@@ -24,9 +24,8 @@ fun HarryPotterListScreen(
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(state.hpList) { hpList ->
                 HpListItem(hpList = hpList, onItemClick = {
-                    //navController.navigate(Screen.CoinDetailsScreen.route + "{/${coin.id}}")
-                }
-                )
+                    navController.navigate(Screen.HarryPotterDetailsScreen.route + "/${hpList.id}")
+                })
             }
         }
         if (state.error.isNotBlank()) {

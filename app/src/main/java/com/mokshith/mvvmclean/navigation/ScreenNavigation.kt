@@ -10,6 +10,7 @@ import com.mokshith.mvvmclean.presentation.theme.coinDetails.CoinDetailsScreen
 import com.mokshith.mvvmclean.presentation.theme.coinList.CoinListScreen
 import com.mokshith.mvvmclean.presentation.theme.harryPotterList.HarryPotterListScreen
 import com.mokshith.mvvmclean.presentation.theme.hpDetails.HarryPotterDetailsScreen
+import com.mokshith.mvvmclean.presentation.theme.menuList.MenuListScreen
 
 @Composable
 fun ScreenNavigation() {
@@ -17,7 +18,7 @@ fun ScreenNavigation() {
     val navController = rememberNavController()
     NavHost(
         navController = navController,
-        startDestination = Screen.HarryPotterDetailsScreen.route
+        startDestination = Screen.MenuListScreen.route
     ) {
         composable(route = Screen.CoinListScreen.route) {
             CoinListScreen(navController)
@@ -30,8 +31,12 @@ fun ScreenNavigation() {
             HarryPotterListScreen(navController)
         }
 
-        composable(route = Screen.HarryPotterDetailsScreen.route) {
+        composable(route = Screen.HarryPotterDetailsScreen.route + "/{id}") {
             HarryPotterDetailsScreen(navController)
+        }
+
+        composable(route = Screen.MenuListScreen.route) {
+            MenuListScreen()
         }
     }
 }

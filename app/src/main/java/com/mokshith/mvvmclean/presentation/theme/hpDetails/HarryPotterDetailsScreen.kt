@@ -35,6 +35,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.SavedStateHandle
 import androidx.navigation.NavHostController
 import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
@@ -45,8 +46,7 @@ import com.mokshith.mvvmclean.common.composobles.LoadingScreen
 @Composable
 fun HarryPotterDetailsScreen(
     navController: NavHostController,
-    viewModel: HpDetailsViewModel = hiltViewModel()
-
+    viewModel: HpDetailsViewModel = hiltViewModel(),
 ) {
     val state = viewModel.state.value
     Scaffold(

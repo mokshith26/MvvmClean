@@ -1,4 +1,4 @@
-package com.mokshith.mvvmclean.data.remote.dto
+package com.mokshith.mvvmclean.data.remote.dto.harryPotter
 
 data class Wand(
     val core: String,

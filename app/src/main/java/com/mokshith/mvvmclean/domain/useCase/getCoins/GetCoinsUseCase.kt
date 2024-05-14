@@ -1,7 +1,7 @@
 package com.mokshith.mvvmclean.domain.useCase.getCoins
 
 import com.mokshith.mvvmclean.common.ApiState
-import com.mokshith.mvvmclean.data.remote.dto.toCoin
+import com.mokshith.mvvmclean.data.remote.dto.coins.toCoin
 import com.mokshith.mvvmclean.domain.models.Coin
 import com.mokshith.mvvmclean.domain.repository.CoinRepository
 import kotlinx.coroutines.flow.Flow

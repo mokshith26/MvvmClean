@@ -1,4 +1,4 @@
-package com.mokshith.gittest.mvvmClean.data.remote.dto
+package com.mokshith.mvvmclean.data.remote.dto.coins
 
 data class Links(
     val explorer: List<String>,

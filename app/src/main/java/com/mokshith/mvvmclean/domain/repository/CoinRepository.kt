@@ -1,8 +1,11 @@
 package com.mokshith.mvvmclean.domain.repository
 
-import com.mokshith.mvvmclean.data.remote.dto.CoinDetailsDto
-import com.mokshith.mvvmclean.data.remote.dto.CoinDto
-import com.mokshith.mvvmclean.data.remote.dto.HPModelDto
+import com.mokshith.mvvmclean.data.remote.dto.coins.CoinDetailsDto
+import com.mokshith.mvvmclean.data.remote.dto.coins.CoinDto
+import com.mokshith.mvvmclean.data.remote.dto.harryPotter.HPModelDto
+import com.mokshith.mvvmclean.data.remote.dto.menu.MenuListDto
+import kotlinx.coroutines.flow.Flow
+import retrofit2.Response
 
 interface CoinRepository {
 
@@ -16,6 +19,9 @@ interface CoinRepository {
     suspend fun getHPList(): List<HPModelDto>
 
     suspend fun getHPDetails(id: String): List<HPModelDto>
+
+    suspend fun getMenuList(): Response<MenuListDto>
+
 }
 
 

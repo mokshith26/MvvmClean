@@ -1,4 +1,4 @@
-package com.mokshith.mvvmclean.data.remote.dto
+package com.mokshith.mvvmclean.data.remote.dto.coins
 
 import com.google.gson.annotations.SerializedName
 import com.mokshith.mvvmclean.domain.models.Coin
